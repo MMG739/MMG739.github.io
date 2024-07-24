@@ -1,46 +1,401 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+/* Mobile styles */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    .skill-card {
+        width: 100%; /* Les cartes prennent toute la largeur disponible */
+        height: auto; /* Hauteur automatique pour plus de flexibilité */
+    }
+    .timeline-container {
+        width: 100%;
+        padding: 1rem;
+    }
+    .portfolio-card {
+        max-width: 100%;
+    }
+    .contact-card {
+        max-width: 100%;
+    }
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .skill-card {
+        width: 45%; /* Ajuster la largeur pour les écrans moyens */
+    }
+    .timeline-container {
+        width: 50%;
+    }
+    .portfolio-card {
+        max-width: 45%;
+    }
+    .contact-card {
+        max-width: 45%;
+    }
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.skill-cards, .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.skill-card, .portfolio-card {
+    flex: 1 1 calc(33.333% - 1rem); /* Pour trois cartes par ligne */
+    margin-bottom: 1rem;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+/* Pour les petits écrans */
+@media (max-width: 767px) {
+    .skill-card, .portfolio-card {
+        flex: 1 1 100%; /* Une carte par ligne */
+    }
 }
 
-main {
-    padding: 20px;
+.btn-outline-primary {
+    font-size: 1rem; /* Ajuster la taille du texte pour les petits écrans */
+    padding: 0.5rem 1rem; /* Ajuster le padding */
 }
 
 section {
-    margin-bottom: 20px;
+    padding: 2rem 1rem; /* Réduire le padding pour les petits écrans */
 }
 
-footer {
-    background: #333;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #007bff;
+    transition: color 0.3s;
+}
+.navbar-brand:hover {
+    color: #0056b3;
+}
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+}
+.nav-link:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+.nav-link.active {
+    color: #007bff;
+    font-weight: 700;
+}
+.btn-outline-dark {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    border-color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-outline-dark:hover {
+    background-color: #333;
     color: #fff;
+}
+
+
+
+
+
+.skills-section {
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
+    margin: 2rem 0;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-card {
+    width: 18rem; /* Fixe la largeur de toutes les cartes */
+    height: 8rem; /* Fixe la hauteur de toutes les cartes */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement les éléments */
+    align-items: center; /* Centre horizontalement les éléments */
+    text-align: center; /* Centre le texte */
+    
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card .card-header {
+    background-color: #007bff;
+    color: white;
+    width: 100%; /* Assure que l'en-tête prend toute la largeur de la carte */
+}
+
+.skill-card h6 {
+    margin: 0;
+}
+
+
+#experience {
+    margin: 2rem 0;
+}
+
+.accordion-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #007bff;
+    background-color: #e9ecef;
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+}
+
+#hello, #about {
+    margin: 2rem 0;
+}
+#hello img, #about img {
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: float 6s infinite ease-in-out;
+}
+#hello img:hover, #about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.animate__animated.animate__fadeIn {
+    animation-duration: 2s;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.typing-animation {
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: blue; }
+}
+
+
+
+.portfolio-section {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+.portfolio-section p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.portfolio-card {
+    max-width: 20rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.portfolio-card img {
     width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.portfolio-card:hover img {
+    transform: scale(1.05);
+}
+.portfolio-card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+.portfolio-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.portfolio-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+.portfolio-card a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.portfolio-card a:hover {
+    color: #242424;
+}
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.tech-badge {
+    background: #e0e0e0;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+.tech-badge:hover {
+    background: #007bff;
+    color: white;
+}
+
+
+.contact-section {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+.contact-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    animation: fadeInDown 1s;
+}
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.contact-card {
+    max-width: 25rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+    padding: 1.5rem;
+}
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+.contact-card h6 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.contact-card a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-card a:hover {
+    color: #0056b3;
+}
+
+
+.education-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+.education-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.education-card {
+    max-width: 20rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: float 3s infinite ease-in-out;
+}
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.education-card .card-header {
+    background-color: #007bff;
+    color: white;
+}
+.education-card h6 {
+    margin: 0;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
