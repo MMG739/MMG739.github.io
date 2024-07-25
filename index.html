@@ -50,31 +50,37 @@
     
     <main>
         <section id="hello">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">   
-                    <div class="col-md-6 col-12 animate__animated animate__fadeInLeft">
-                        <img src="./img/img2.jpg" class="img-fluid"  alt="...">
-                    </div>
                     <div class="col-md-6 col-12 d-flex align-items-center text-center animate__animated animate__fadeInRight">
-                        <div class="ms-5">
+                        <div class="">
                             <h1 class="">Salut, je m'appelle</h1>
                             <h1 class="">Mouhamadou Moustapha <br> Gueye</h1>
                             <h3 class="text-start">Je suis</h3>
-                            <h3  class="typing-animation mb-4">Développeur Web et Mobile <br>
-                                UI/UX Designer
-                            </h3>
-                            <p  class="typing-animation mb-4">Je conçois et développe des solutions digitales</p>
+                            <h3  class="typing-animation mb-4">Développeur Web <br> et Mobile</h3>
+                            <p  class="">Je conçois et développe des solutions digitales</p>
 
                         </div>
                     </div>
+                    
+                    <div class="col-md-6 col-12 animate__animated animate__fadeInLeft">
+                        <div class="embed-responsive embed-responsive-16by9 float-end">
+                            <video autoplay muted loop width="300"  class="embed-responsive-item">
+                                <source src="./video/vid1.mp4" type="video/mp4" />
+                                <!-- Ajoutez d'autres sources vidéo ici (par exemple, WebM) -->
+                                Votre navigateur ne prend pas en charge les vidéos HTML5.
+                            </video>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
         <section id="about">
             <div class="container-fluid">
-                <div class="row">  
-                    <div class="col-md-6 col-12 d-flex align-items-center text-center animate__animated animate__fadeInLeft">
-                        <div class="ms-5">
+                <div class="row">   
+                    <div class=" d-flex align-items-center text-center animate__animated animate__fadeInLeft">
+                        <div class="">
                             <h2>À Propos de  moi</h2>
                             <p>Passionné par la création de solutions technologiques innovantes, je suis constamment à la recherche de nouvelles
                                 opportunités pour développer mes compétences et contribuer à des projets novateurs. Mon objectif est de continuer à élargir
@@ -82,9 +88,7 @@
                                 de nouvelles opportunités.</p>
                         </div>
                     </div> 
-                    <div class="col-md-6 col-12 animate__animated animate__fadeInRight">
-                        <img src="./img/img3.jpg" class="img-thumbnail float-end" width="200px" alt="...">
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -165,26 +169,33 @@
                 </div>
             </div>    
         </section>
-        
         <section id="education" class="education-section">
-            <h2 class="animate__animated animate__fadeIn">Formation</h2>
-            <div class="education-cards">
-                <div class="card education-card border-primary mb-3 animate__animated animate__fadeInUp">
-                    <div class="card-header"><i class="fas fa-university"></i> ECOLE D’INGENIEUR ISM DIGITAL CAMPUS</div>
-                    <div class="card-body text-primary">
-                        <h6 class="card-title">Licence en Genie Logicielle Reseau et Systeme</h6>
-                        <p class="card-text">Octobre 2021 - Juillet 2024</p>
-                    </div>
+            <h2 class="animate__animated animate__fadeIn  p-5">Formation</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 animate__animated animate__fadeInLeft">
+                    <img src="./img/img2.jpg" width="200" class="img-thumbnail" alt="...">
                 </div>
-                <div class="card education-card border-secondary mb-3 animate__animated animate__fadeInUp">
-                    <div class="card-header"><i class="fas fa-graduation-cap"></i> EDACY ACADEMY</div>
-                    <div class="card-body text-secondary">
-                        <h6 class="card-title">Senior FullStack With Soft-Skills</h6>
-                        <p class="card-text">Juillet 2024 - Septembre 2024</p>
+                <div class="col-md-6 col-12">
+                    <div class="education-cards flex-column ">
+                        <div class="card education-card border-primary mb-3 animate__animated animate__fadeInUp">
+                            <div class="card-header"><i class="fas fa-university"></i> ECOLE D’INGENIEUR ISM DIGITAL CAMPUS</div>
+                            <div class="card-body text-primary">
+                                <h6 class="card-title">Licence en Génie Logiciel Réseau et Système</h6>
+                                <p class="card-text">Octobre 2021 - Juillet 2024</p>
+                            </div>
+                        </div>
+                        <div class="card education-card border-secondary mb-3 animate__animated animate__fadeInUp">
+                            <div class="card-header"><i class="fas fa-graduation-cap"></i> EDACY ACADEMY</div>
+                            <div class="card-body text-secondary">
+                                <h6 class="card-title">Senior FullStack avec Soft-Skills</h6>
+                                <p class="card-text">Juillet 2024 - Septembre 2024</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section id="portfolio" class="portfolio-section">
             <div class="container-fluid text-center">
                 <h2 class="animate__animated animate__fadeInDown">Portfolio</h2>
