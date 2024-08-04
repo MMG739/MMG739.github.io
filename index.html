@@ -8,301 +8,280 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-    
-    </style>
 </head>
 <body>
     <header class="bg-light shadow-sm">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="">MMG-Tech</a>
+                <a id="brand" class="navbar-brand fw-bold" href="">MMG-Tech</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="nav-list navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">À Propos</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">Expérience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Formation</a>
+                            <a class="nav-link" href="#carriere">Carrière</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-primary animate__animated animate__fadeInRight">Telecharger Mon CV</button>
+                    <div>
+                        <button class="btn-download">Télécharger Mon CV</button>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     
-    
     <main>
-        <section id="hello">
-            <div class="container">
-                <div class="row">   
-                    <div class="col-md-6 col-12 d-flex align-items-center text-center animate__animated animate__fadeInRight">
-                        <div class="">
-                            <h1 class="">Salut, je m'appelle</h1>
-                            <h1 class="">Mouhamadou Moustapha <br> Gueye</h1>
-                            <h3 class="text-start">Je suis</h3>
-                            <h3  class="typing-animation mb-4">Développeur Web <br> et Mobile</h3>
-                            <p  class="">Je conçois et développe des solutions digitales</p>
+        <div id="home" class="section active">
+            <section id="hello">
+                <div class="container-fluid px-4 py-5 my-5">
+                    <div class="row justify-content-center">   
+                        <div class="col-md-4 col-12 d-flex flex-column animate__animated animate__fadeInRight">
+                            <div>
+                                <img src="./img/sncode.jpg" class="img-thumbnail float-start image-container" width="200px" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 d-flex align-items-center text-center animate__animated animate__fadeInRight">
+                            <div class="">
+                                <h2 class="">Mouhamadou <br> Moustapha <br> Gueye</h2>
+                                <h3 class="typing-animation mb-4">Développeur FullStack </h3>
+                                <p class="">Je conçois et développe des solutions digitales</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 d-flex flex-column animate__animated animate__fadeInRight">
+                            <div>
+                                <img src="./img/africode.jpg" class="img-thumbnail float-end" width="200px" alt="...">
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about">
+                <div class="container-fluid px-4 py-5 my-5">
+                    <div class="row">   
+                        <div class="text-center">
+                            <div class="">
+                                <h2>À Propos de  moi</h2>
+                                <p>Je suis Developpeur FullStack basé a Dakar(Sénégal),
+                                    passionné par la création de solutions technologiques innovantes. <br>
+                                    Constamment à la recherche de nouvelles opportunités pour développer mes compétences et contribuer à des projets novateurs. <br>
+                                    Mon objectif est de continuer à élargir mes connaissances et de participer au developement de l'Afrique par le Digital. <br>
+                                    Je suis enthousiaste à l’idée de relever de nouveaux défis et d’explorer de nouvelles opportunités.</p>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills-section">
+                <div class="container-fluid">
+                    <h2 class="text-center pb-3">Techno que j'utilise</h2>
+                    <div>
+                        <p align="center">
+                            <img src="https://skillicons.dev/icons?i=js,java,python,php" style="max-width: auto; height: auto;" />
+                        </p>
+                        <p align="center">
+                            <img src="https://skillicons.dev/icons?i=symfony,angular,spring,flutter" style="max-width: auto; height: auto;" />
+                        </p>
+                        <p align="center">
+                            <img src="https://skillicons.dev/icons?i=mysql,windows,linux,figma" style="max-width: auto; height: auto;" />
+                        </p>                  
+                    </div>
+                    
+                    
+                </div>
+            </section>
+        </div>
 
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-12 animate__animated animate__fadeInLeft">
-                        <div class="embed-responsive embed-responsive-16by9 float-end">
-                            <video autoplay muted loop width="300"  class="embed-responsive-item">
-                                <source src="./video/vid1.mp4" type="video/mp4" />
-                                <!-- Ajoutez d'autres sources vidéo ici (par exemple, WebM) -->
-                                Votre navigateur ne prend pas en charge les vidéos HTML5.
-                            </video>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="container-fluid">
-                <div class="row">   
-                    <div class=" d-flex align-items-center text-center animate__animated animate__fadeInLeft">
-                        <div class="">
-                            <h2>À Propos de  moi</h2>
-                            <p>Passionné par la création de solutions technologiques innovantes, je suis constamment à la recherche de nouvelles
-                                opportunités pour développer mes compétences et contribuer à des projets novateurs. Mon objectif est de continuer à élargir
-                                mes connaissances et de progresser dans ma carrière. Je suis enthousiaste à l’idée de relever de nouveaux défis et d’explorer
-                                de nouvelles opportunités.</p>
-                        </div>
-                    </div> 
-                    
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="skills-section">
-            <div class="conatiner-fluid">
-                <h2 class="animate__animated animate__fadeIn">Compétences</h2>
-                <div class="skill-cards">
-                    <div class="card skill-card border-primary mb-3 animate__animated animate__fadeInUp">
-                        <div class="card-header"><i class="fab fa-java"></i> Framework Web et Mobile</div>
-                        <div class="card-body text-primary">
-                        <h6 class="card-title">Spring | Angular | Flutter | Symfony | Flask</h6>
-                        </div>
-                    </div>
-                    <div class="card skill-card border-secondary mb-3 animate__animated animate__fadeInUp">
-                        <div class="card-header"><i class="fas fa-database"></i> Base de données</div>
-                        <div class="card-body text-secondary">
-                        <h6 class="card-title">Oracle | MySQL | SQL Server</h6>
-                        </div>
-                    </div>
-                    <div class="card skill-card border-success mb-3 animate__animated animate__fadeInUp">
-                        <div class="card-header"><i class="fas fa-paint-brush"></i> Design</div>
-                        <div class="card-body text-success">
-                        <h6 class="card-title">Canva | Outils Adobe | Figma</h6>
-                        </div>
-                    </div>
-                    <div class="card skill-card border-danger mb-3 animate__animated animate__fadeInUp">
-                        <div class="card-header"><i class="fas fa-desktop"></i> Systèmes</div>
-                        <div class="card-body text-danger">
-                        <h6 class="card-title">Linux | Windows Server</h6>
-                        </div>
-                    </div>
-                    <div class="card skill-card border-warning mb-3 animate__animated animate__fadeInUp">
-                        <div class="card-header"><i class="fas fa-tasks"></i> Gestion de projet</div>
-                        <div class="card-body text-warning">
-                        <h6 class="card-title">Trello | ClickUp | Méthode Agile</h6>
-                        </div>
-                    </div>
-                    <div class="card skill-card border-info mb-3 animate__animated animate__fadeInUp">
-                        <div class="card-header"><i class="fas fa-cloud"></i> Outils divers</div>
-                        <div class="card-body text-info">
-                        <h6 class="card-title">Softr | Airtable</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-center mt-4" id="experience">
-            <div class="container-fluid">
-                <h2 >Expérience</h2>
-                <div class="accordion mt-4" id="experienceAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                LeplanB.io - BOOTCAMP NOCODE (Août-2023 Octobre-2023)
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
-                            <div class="accordion-body text-center">
-                                Lors de ce bootcamp, j'ai découvert des outils comme Airtable et Softr, et j'ai beaucoup appris sur le design UI et UX. <br>
-                                Nous avons réalisé des designs avec Canva et créé des sites web en nocode. <br>
-                                Ce fut une véritable découverte et une très belle expérience.
+        <div id="portfolio" class="section">
+            <section class="portfolio-section">
+                <div class="container-fluid px-4 py-5 my-5 text-center">
+                    <h2 class="animate__animated animate__fadeInDown">Portfolio</h2>
+                    <p>Voici quelques projets que j'ai réalisés, que ce soit dans le cadre professionnel ou personnel. <br> Vous pourrez explorer chaque projet plus en détail sur mon GitHub.</p>
+                    <div class="portfolio-cards">
+                        <div class="portfolio-card animate__animated animate__fadeInUp">
+                            <img src="./img/ismResto.png" class="card-img-top" alt="ISM Resto App">
+                            <div class="portfolio-card-body">
+                                <h5 class="card-title">ISM Resto App</h5>
+                                <p class="card-text">Application pour le restaurant du campus de l'ISM .</p>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Flutter</span>
+                                    <span class="tech-badge">Firebase</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Peexitgroup - Stagiaire en Dev (Juillet-2022 Novembre-2022)
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
-                            <div class="accordion-body text-center">
-                                Tout juste initié au développement web, j'ai pu en apprendre en profondeur sur ce domaine et travailler avec des experts qui nous ont beaucoup appris. <br>
-                                Que ce soit dans le design thinking, l'intégration des maquettes, l'organisation de l'équipe, la gestion des tâches, tout le processus jusqu'au déploiement, c'était une expérience vraiment enrichissante.
+                        <div class="portfolio-card animate__animated animate__fadeInUp">
+                            <img src="./img/knd.png" class="card-img-top" alt="Bokk yoon">
+                            <div class="portfolio-card-body">
+                                <h5 class="card-title">Kaye Niou Deme</h5>
+                                <p class="card-text">Application de Covoiturage a la Senegalaise .</p>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Angular</span>
+                                    <span class="tech-badge">Node.js</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card animate__animated animate__fadeInUp">
+                            <img src="./img/img4.png" class="card-img-top" alt="School App">
+                            <div class="portfolio-card-body">
+                                <h5 class="card-title">School App</h5>
+                                <p class="card-text">Application pour la gestion des activités scolaires.</p>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">Express</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card animate__animated animate__fadeInUp">
+                            <img src="./img/Fashion.png" class="card-img-top" alt="Fashion Boutique">
+                            <div class="portfolio-card-body">
+                                <h5 class="card-title">Fashion Boutique</h5>
+                                <p class="card-text">Site de e-commerce pour une boutique de mode.</p>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Vue.js</span>
+                                    <span class="tech-badge">Laravel</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card animate__animated animate__fadeInUp">
+                            <img src="./img/firstAid.png" class="card-img-top" alt="Hospital App">
+                            <div class="portfolio-card-body">
+                                <h5 class="card-title">First-Aid</h5>
+                                <p class="card-text">Application pour faciliter la gestion des urgences medicales.</p>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Django</span>
+                                    <span class="tech-badge">PostgreSQL</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-card animate__animated animate__fadeInUp">
+                            <img src="./img/terangaMarket.png" class="card-img-top" alt="teranga Market">
+                            <div class="portfolio-card-body">
+                                <h5 class="card-title">Teranga Market</h5>
+                                <p class="card-text">Votre Supermarche 100% senegalais chez vous.</p>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Spring</span>
+                                    <span class="tech-badge">MySQL</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>    
-        </section>
-        <section id="education" class="education-section">
-            <h2 class="animate__animated animate__fadeIn  p-5">Formation</h2>
-            <div class="d-flex align-items-center justify-content-center">
-                <div class="">
-                    <div class="education-cards flex-column ">
-                        <div class="card education-card border-primary mb-3 animate__animated animate__fadeInUp">
-                            <div class="card-header"><i class="fas fa-university"></i> ECOLE D’INGENIEUR ISM DIGITAL CAMPUS</div>
-                            <div class="card-body text-primary">
-                                <h6 class="card-title">Licence en Génie Logiciel Réseau et Système</h6>
-                                <p class="card-text">Octobre 2021 - Juillet 2024</p>
+            </section>
+        </div>
+
+        <div id="carriere" class="section">
+            <div class="container px-4 py-5 my-5">
+                <div class="row">
+                    <!-- Experience Section -->
+                    <div class="col-md-12">
+                        <h2 class="text-center mb-4">Expériences Professionnelles</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card futuristic-card" data-description="Description de l'expérience chez XYZ.">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Freelance FullStack Dev</h5>
+                                        <p class="card-text">Juin 2024 à Présent</p>
+                                        <div class="experience-description"></div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card futuristic-card" data-description="Description de l'expérience chez ABC.">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Junior Développeur chez Peex-it</h5>
+                                        <p class="card-text">Mars 2022 à Décembre 2022</p>
+                                        <div class="experience-description"></div>
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
-                        <div class="card education-card border-secondary mb-3 animate__animated animate__fadeInUp">
-                            <div class="card-header"><i class="fas fa-graduation-cap"></i> EDACY ACADEMY</div>
-                            <div class="card-body text-secondary">
-                                <h6 class="card-title">Senior FullStack avec Soft-Skills</h6>
-                                <p class="card-text">Juillet 2024 - Septembre 2024</p>
+                    </div>
+                    <!-- Education Section -->
+                    <div class="col-md-12">
+                        <h2 class="text-center mb-4">Diplômes</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card futuristic-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Master en Informatique</h5>
+                                        <p class="card-text">Université ABC - 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card futuristic-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Licence en Informatique</h5>
+                                        <p class="card-text">Université XYZ - 2020</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="portfolio" class="portfolio-section">
-            <div class="container-fluid text-center">
-                <h2 class="animate__animated animate__fadeInDown">Portfolio</h2>
-                <p>Voici quelques projets que j'ai réalisés, que ce soit dans le cadre professionnel ou personnel. <br> Vous pourrez explorer chaque projet plus en détail sur mon GitHub.</p>
-                <div class="portfolio-cards">
-                    <div class="portfolio-card animate__animated animate__fadeInUp">
-                        <img src="./img/ismResto.png" class="card-img-top" alt="ISM Resto App">
-                        <div class="portfolio-card-body">
-                            <h5 class="card-title">ISM Resto App</h5>
-                            <p class="card-text">Application pour le restaurant du campus de l'ISM .</p>
-                            <div class="tech-badges">
-                                <span class="tech-badge">Flutter</span>
-                                <span class="tech-badge">Firebase</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card animate__animated animate__fadeInUp">
-                        <img src="./img/knd.png" class="card-img-top" alt="Bokk yoon">
-                        <div class="portfolio-card-body">
-                            <h5 class="card-title">Kaye Niou Deme</h5>
-                            <p class="card-text">Application de Covoiturage a la Senegalaise .</p>
-                            <div class="tech-badges">
-                                <span class="tech-badge">Angular</span>
-                                <span class="tech-badge">Node.js</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card animate__animated animate__fadeInUp">
-                        <img src="./img/img4.png" class="card-img-top" alt="School App">
-                        <div class="portfolio-card-body">
-                            <h5 class="card-title">School App</h5>
-                            <p class="card-text">Application pour la gestion des activités scolaires.</p>
-                            <div class="tech-badges">
-                                <span class="tech-badge">React</span>
-                                <span class="tech-badge">Express</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card animate__animated animate__fadeInUp">
-                        <img src="./img/Fashion.png" class="card-img-top" alt="Fashion Boutique">
-                        <div class="portfolio-card-body">
-                            <h5 class="card-title">Fashion Boutique</h5>
-                            <p class="card-text">Site de e-commerce pour une boutique de mode.</p>
-                            <div class="tech-badges">
-                                <span class="tech-badge">Vue.js</span>
-                                <span class="tech-badge">Laravel</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card animate__animated animate__fadeInUp">
-                        <img src="./img/firstAid.png" class="card-img-top" alt="Hospital App">
-                        <div class="portfolio-card-body">
-                            <h5 class="card-title">First-Aid</h5>
-                            <p class="card-text">Application pour faciliter la gestion des urgences medicales.</p>
-                            <div class="tech-badges">
-                                <span class="tech-badge">Django</span>
-                                <span class="tech-badge">PostgreSQL</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card animate__animated animate__fadeInUp">
-                        <img src="./img/terangaMarket.png" class="card-img-top" alt="teranga Market">
-                        <div class="portfolio-card-body">
-                            <h5 class="card-title">Teranga Market</h5>
-                            <p class="card-text">Votre Supermarche 100% senegalais chez vous.</p>
-                            <div class="tech-badges">
-                                <span class="tech-badge">Spring</span>
-                                <span class="tech-badge">MySQL</span>
-                            </div>
-                            <a href="#" class="btn btn-outline-warning mt-2">Voir le projet</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       <section id="contact" class="contact-section">
-        <div class="container-fluid">
-            <h2 class="animate__animated animate__fadeInDown">Contact</h2>
-            <div class="contact-cards">
-                <div class="contact-card animate__animated animate__fadeInUp">
-                    <i class="fas fa-envelope"></i>
-                    <h6>Email</h6>
-                    <p><a href="mailto:Gueyemouhamadoumoustapha@gmail.com">Gueyemouhamadoumoustapha@gmail.com</a></p>
-                </div>
-                <div class="contact-card animate__animated animate__fadeInUp">
-                    <i class="fas fa-phone"></i>
-                    <h6>Téléphone</h6>
-                    <p>+221 78 152 23 30</p>
-                </div>
-                <div class="contact-card animate__animated animate__fadeInUp">
-                    <i class="fab fa-linkedin"></i>
-                    <h6>LinkedIn</h6>
-                    <p><a href="https://www.linkedin.com/in/mmgtech" target="_blank">www.linkedin.com/in/mmgtech</a></p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div id="contact" class="section">
+            <section class="contact-section">
+                <div class="container-fluid px-4 py-5 text-center">
+                    <h2>Contactez-moi</h2>
+                    <p>Je suis disponible pour des opportunités de collaboration ou pour toute question concernant mes projets.</p>
+                    <div class="d-flex align-items-center">
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:gueyemouhamadoumoustapha@gmail.com">gueyemouhamadoumoustapha@gmail.com</a></p>
+                                <p><i class="fas fa-phone"></i> Téléphone: +221 78 152 23 30</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Adresse: Dakar, Sénégal</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="name" required aria-required="true">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required aria-required="true">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required aria-required="true"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>        
     </main>
-    <footer>
-        <p>&copy; 2024 Mouhamadou Moustapha Gueye. Tous droits réservés.</p>
+    
+    <footer align="center">
+        <p>© 2024 Mouhamadou Moustapha Gueye. Tous droits réservés.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
