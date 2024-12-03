@@ -24,6 +24,10 @@ font-size:1.5rem
 font-size:1rem
 }
 
+#hello{
+    flex-direction: column;
+}
+
 .image-container {
 display:none
 }
@@ -125,7 +129,7 @@ backdrop-filter:blur(10px);
 }
 
 #hello,#about {
-margin:2rem 0
+margin:3.5rem 0
 }
 
 #hello img,#about img {
